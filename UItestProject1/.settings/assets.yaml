@@ -7,6 +7,84 @@ resources:
     dependencies: 
       - path: /UItestProject1/src
         type: javaClasspath
+  - name: Netflix.recdata
+  - name: Netflix.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UItestProject1/Netflix.recdata
+        type: recsessionRecdata
+  - name: Netflix.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.0.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF8D32EB373600CA00E13039666162
+    dependencies: 
+      - path: /UItestProject1/Netflix.recsession
+        type: testRecsession
+      - path: /UItestProject1/netflix_com_ad1.ma
+        type: test#moeb.applicationPackage
+  - name: Netflix_1729243648705.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1729243648705
+      tags: 
+      testId: A1EF8D32EB373600CA00E13039666162
+      testName: Netflix
+    dependencies: 
+      - path: /UItestProject1/Netflix.testsuite
+        type: statsSessionTest
+      - path: /UItestProject1/Netflix_1729243648705.xmoebreport
+        type: statsSessionAsset
+      - path: /UItestProject1/Netflix_1729243648705_orch!system.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729243648705_orch!system.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729243648705_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729243648705_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729243667605.executiondlr
+        type: statsSessionAsset
+  - name: Netflix_1729243648705.xmoebreport
+  - name: Netflix_1729243648705_orch!system.mstats
+  - name: Netflix_1729243648705_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Netflix_1729243648705_perf!localhost.mstats
+  - name: Netflix_1729243648705_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Netflix_1729243667605.executiondlr
+  - name: Netflix_1729244075114.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1729244075114
+      tags: 
+      testId: A1EF8D32EB373600CA00E13039666162
+      testName: Netflix
+    dependencies: 
+      - path: /UItestProject1/Netflix.testsuite
+        type: statsSessionTest
+      - path: /UItestProject1/Netflix_1729244075114.xmoebreport
+        type: statsSessionAsset
+      - path: /UItestProject1/Netflix_1729244075114_orch!system.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729244075114_orch!system.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729244075114_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729244075114_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/Netflix_1729244083637.executiondlr
+        type: statsSessionAsset
+  - name: Netflix_1729244075114.xmoebreport
+  - name: Netflix_1729244075114_orch!system.mstats
+  - name: Netflix_1729244075114_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Netflix_1729244075114_perf!localhost.mstats
+  - name: Netflix_1729244075114_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Netflix_1729244083637.executiondlr
   - name: ScreenerTest1.recdata
   - name: ScreenerTest1.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -55,11 +133,125 @@ resources:
   - name: ScreenerTest1_1727248269365_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: ScreenerTest1_1727248281354.executiondlr
+  - name: ScreenerTest1_1727954016595.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1727954016595
+      tags: 
+      testId: A1EF7B0D12607F80C188E13534633232
+      testName: ScreenerTest1
+    dependencies: 
+      - path: /UItestProject1/ScreenerTest1.testsuite
+        type: statsSessionTest
+      - path: /UItestProject1/ScreenerTest1_1727954016595.xmoebreport
+        type: statsSessionAsset
+      - path: /UItestProject1/ScreenerTest1_1727954016595_orch!system.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1727954016595_orch!system.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1727954016595_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1727954016595_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1727954031141.executiondlr
+        type: statsSessionAsset
+  - name: ScreenerTest1_1727954016595.xmoebreport
+  - name: ScreenerTest1_1727954016595_orch!system.mstats
+  - name: ScreenerTest1_1727954016595_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1727954016595_perf!localhost.mstats
+  - name: ScreenerTest1_1727954016595_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1727954031141.executiondlr
+  - name: ScreenerTest1_1728479336758.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1728479336758
+      tags: 
+      testId: A1EF7B0D12607F80C188E13534633232
+      testName: ScreenerTest1
+    dependencies: 
+      - path: /UItestProject1/ScreenerTest1.testsuite
+        type: statsSessionTest
+      - path: /UItestProject1/ScreenerTest1_1728479336758.xmoebreport
+        type: statsSessionAsset
+      - path: /UItestProject1/ScreenerTest1_1728479336758_orch!system.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728479336758_orch!system.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728479336758_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728479336758_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728479349339.executiondlr
+        type: statsSessionAsset
+  - name: ScreenerTest1_1728479336758.xmoebreport
+  - name: ScreenerTest1_1728479336758_orch!system.mstats
+  - name: ScreenerTest1_1728479336758_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1728479336758_perf!localhost.mstats
+  - name: ScreenerTest1_1728479336758_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1728479349339.executiondlr
+  - name: ScreenerTest1_1728642202400.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1728642202400
+      tags: 
+      testId: A1EF7B0D12607F80C188E13534633232
+      testName: ScreenerTest1
+    dependencies: 
+      - path: /UItestProject1/ScreenerTest1.testsuite
+        type: statsSessionTest
+      - path: /UItestProject1/ScreenerTest1_1728642202400.xmoebreport
+        type: statsSessionAsset
+      - path: /UItestProject1/ScreenerTest1_1728642202400_orch!system.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728642202400_orch!system.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728642202400_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728642202400_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UItestProject1/ScreenerTest1_1728642218124.executiondlr
+        type: statsSessionAsset
+  - name: ScreenerTest1_1728642202400.xmoebreport
+  - name: ScreenerTest1_1728642202400_orch!system.mstats
+  - name: ScreenerTest1_1728642202400_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1728642202400_perf!localhost.mstats
+  - name: ScreenerTest1_1728642202400_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: ScreenerTest1_1728642218124.executiondlr
+  - name: control_com_5d2.ma
+    type: moeb.applicationPackage
+  - name: moneycontrol.recdata
+  - name: moneycontrol.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UItestProject1/moneycontrol.recdata
+        type: recsessionRecdata
+  - name: moneycontrol.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.0.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF8D329412DC80CA00E13039666162
+    dependencies: 
+      - path: /UItestProject1/control_com_5d2.ma
+        type: test#moeb.applicationPackage
+      - path: /UItestProject1/moneycontrol.recsession
+        type: testRecsession
+  - name: netflix_com_ad1.ma
+    type: moeb.applicationPackage
   - name: screener_in_f56.ma
     type: moeb.applicationPackage
   - name: src
     resources: 
       - name: test
         resources: 
+          - name: Netflix_Test_A1EF8D32EB373600CA00E13039666162.java
+            type: com.ibm.rational.test.lt.generatedCode
           - name: ScreenerTest1_Test_A1EF7B0D12607F80C188E13534633232.java
             type: com.ibm.rational.test.lt.generatedCode
